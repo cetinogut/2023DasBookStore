@@ -6,7 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{14366A65-EFD5-4E2B-830C-06C8773EEE56}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
-		readMeCo.txt = readMeCo.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{237CBE2F-0397-4DED-BC03-C65FFDB9B66B}"
@@ -18,6 +17,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DasBookStore.Domain", "src\DasBookStore.Domain\DasBookStore.Domain.csproj", "{F0606C6D-9CDE-47B2-ADDE-094D87DBB003}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DasBookStore.Infrastructure", "src\DasBookStore.Infrastructure\DasBookStore.Infrastructure.csproj", "{A8677066-AB10-4028-A116-E637B6C845C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "aread", "aread", "{28323E61-C35A-44A3-9D52-E18024DBE96C}"
+	ProjectSection(SolutionItems) = preProject
+		readMeCo.txt = readMeCo.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
