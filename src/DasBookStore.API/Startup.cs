@@ -9,6 +9,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore;
+using AutoMapper;
+using DasBookStore.API.Configuration;
 
 namespace DasBookStore.API
 {
@@ -29,8 +31,12 @@ namespace DasBookStore.API
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
 
+            services.AddAutoMapper(typeof(Startup));
 
             services.AddControllers();
+
+            services.ResolveDependencies();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "DasBookStore.API", Version = "v1" });
